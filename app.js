@@ -1,6 +1,6 @@
 $(function() {
 	var discoPower = null;
-	$('#disco').click(function(){
+	$('.disco').click(function(){
 		if(discoPower === null){
 			discoPower = setInterval(function(){
 				$('.cell').each(function(){
@@ -17,7 +17,7 @@ $(function() {
 		let color = getColor();
 		$(this).css('background-color', color);
 	});
-	$('#reset').click(function(){
+	$('.reset').click(function(){
 		$('.cell').css('background-color', '');
 	});
 });
